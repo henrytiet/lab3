@@ -22,4 +22,10 @@ public class ArrayTests {
     int[] input2= {1, 2, 3, 4, 5};
     assertArrayEquals(new int[]{5, 4, 3, 2, 1}, ArrayExamples.reversed(input2));
   }
+
+  @Test
+  public void testAverageWithoutLowest() {
+    double[] multipleLow= {8.0, 8.0, 8.0, 8.0, 8.0, 8.0};
+    assertEquals(8.0, ArrayExamples.averageWithoutLowest(multipleLow), 0);
+  }
 }
